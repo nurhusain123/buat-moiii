@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UNTUK MOIIIKUU TERCINTAAA 💖</title>
+  <style>
+    :root{
+      --bg:#0f1226;
+      --card:#111327;
+      --accent:#ff6b9a;
+      --muted:#cfcfe8;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(ellipse at top right, #15203a 0%, var(--bg) 40%), linear-gradient(180deg,#071025, #0b0f1a);
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      box-sizing:border-box;
+    }
+
+    .card{
+      width:100%;
+      max-width:880px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:20px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+      position:relative;
+      overflow:hidden;
+    }
+
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+    .avatar{
+      width:84px;height:84px;border-radius:50%;
+      background:linear-gradient(135deg,#ff8aa2,#ff5a9e);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:white;font-size:34px;
+      box-shadow: 0 6px 18px rgba(255,100,140,0.14);
+    }
+    h1{margin:0;font-size:24px;color:white}
+    p.lead{margin:6px 0 0;color:#e6e6ff88;font-size:14px}
+
+    main{display:flex;gap:24px;margin-top:18px;align-items:flex-start}
+    .left{flex:1}
+    .right{width:320px;flex-shrink:0}
+
+    .note{
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+      border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.02);
+      color:var(--muted);
+      line-height:1.5;
+    }
+
+    .photo {
+        margin-top: 16px;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 14px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      }
+      
+
+    .big-love{
+      font-size:18px;color:#fff;margin:0 0 8px;
+    }
+    .small{
+      font-size:13px;color:#d6d6ffcc;margin:0 0 12px;
+    }
+
+    .actions{display:flex;gap:8px;margin-top:12px}
+    .btn{
+      background:linear-gradient(90deg,var(--accent), #ff3f7a);
+      border:none;padding:10px 14px;border-radius:10px;color:white;font-weight:600;
+      cursor:pointer;box-shadow:0 8px 20px rgba(255,90,140,0.12);
+    }
+    .btn.secondary{
+      background:transparent;border:1px solid rgba(255,255,255,0.06);
+      color:var(--muted);font-weight:600;
+    }
+
+    .hearts{
+      position:absolute;right:-40px;top:-40px;pointer-events:none;
+    }
+
+    /* small hearts animation */
+    .heart{
+      position:absolute;width:18px;height:18px;background:var(--accent);
+      transform:rotate(45deg);border-radius:3px;
+      box-shadow:0 6px 14px rgba(255,90,140,0.24);
+      animation:floatUp linear infinite;
+      opacity:0.95;
+    }
+    .heart:before,.heart:after{
+      content:"";position:absolute;background:var(--accent);width:18px;height:18px;border-radius:50%;
+      top:-9px; left:0;
+    }
+    .heart:after{left:9px;top:0}
+    @keyframes floatUp{
+      0%{transform:translateY(0) scale(0.9) rotate(45deg); opacity:1}
+      100%{transform:translateY(-320px) scale(1.1) rotate(45deg); opacity:0}
+    }
+
+    footer{margin-top:18px;color:#bfbfe0cc;font-size:13px;display:flex;justify-content:space-between;align-items:center}
+    .signature{font-weight:700;color:#fff}
+    .quote{font-style:italic;color:#d9d9f0cc}
+
+    /* responsive */
+    @media (max-width:760px){
+      main{flex-direction:column}
+      .right{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main" aria-label="Kartu Romantis">
+    <div class="hearts" id="hearts-container"></div>
+
+    <header>
+      <div class="avatar" id="avatar">💌</div>
+      <div>
+        <h1 id="title">Untukmu, Cayangg</h1>
+        <p class="lead" id="subtitle">Kecup virtual ini untuk membuat harimu lebih manis ✨</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <div class="note">
+          <p class="big-love" id="love-line">Aloo Cayanggg —</p>
+          <p class="small" id="message">
+            Kamu adalah alasan aku tersenyum setiap hari. Terima kasih sudah menjadi teman, sahabat, dan belahan hati.
+            Semoga hari ini kamu merasa dicintai — karena kamu memang sangat berharga bagiku.
+          </p>
+
+          <div class="actions">
+            <button class="btn" id="reveal-btn">Buka Kejutan</button>
+            <button class="btn secondary" id="copy-btn">Salin Link</button>
+          </div>
+
+          <div id="surprise" style="margin-top:12px;display:none">
+            <p style="margin:0 0 6px;font-weight:700;color:#fff">Kejutan:</p>
+            <p style="margin:0 0 10px">🌟 Kamu membuat hari-hariku berarti. Aku janji akan selalu ada di sampingmu — selamanya.</p>
+            <p style="margin:0;font-size:13px;color:#e8e8ff99">Tekan ❤️ kalau kamu suka.</p>
+            <div style="margin-top:8px">
+              <button class="btn" id="heart-btn">❤️  Like</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="right">
+        <div class="note" style="text-align:center">
+          <p style="margin:0 0 8px;color:#fff;font-weight:700">Kenangan Kita</p>
+          <p style="margin:0 0 12px;font-size:14px">Tanggal spesial: <strong id="date">24 Maret 2024</strong></p>
+          <p style="margin:0 0 10px;font-size:13px;color:#d6d6ffcc">Momen: Ketika cinta kita menemui titik temu dan akhirnya kita resmi menjadi sepasang kekasih yg saling menyayangi.</p>
+        </div>
+        <img src="foto.jpg" alt="Foto Kita" class="photo">
+      </aside>
+    </main>
+
+    <footer>
+      <div class="signature" id="from-line">Dari: Bayik tercinta</div>
+      <div class="quote" id="foot-quote">"Bersamamu adalah rumahku."</div>
+    </footer>
+  </div>
+
+  <script>
+    // small hearts generator
+    const container = document.getElementById('hearts-container');
+    function makeHeart(x,y,delay,dur,size){
+      const h = document.createElement('div');
+      h.className = 'heart';
+      h.style.left = x+'px';
+      h.style.top = y+'px';
+      h.style.width = size+'px';
+      h.style.height = size+'px';
+      h.style.animationDuration = dur+'s';
+      h.style.animationDelay = delay+'s';
+      container.appendChild(h);
+      setTimeout(()=> h.remove(), (dur+delay)*1000 + 500);
+    }
+    setInterval(()=>{
+      const x = Math.random()*260;
+      const y = Math.random()*80;
+      makeHeart(x,y,0,3+Math.random()*2,12+Math.random()*18);
+    }, 350);
+
+    // interactivity
+    document.getElementById('reveal-btn').addEventListener('click', ()=>{
+      document.getElementById('surprise').style.display = 'block';
+      document.getElementById('reveal-btn').style.display = 'none';
+    });
+
+    document.getElementById('heart-btn').addEventListener('click', (e)=>{
+      e.target.textContent = '❤️ Terkirim';
+      e.target.disabled = true;
+      // small popup
+      alert('Pesan hati terkirim untuk dia 💖');
+    });
+
+    // copy current URL
+    document.getElementById('copy-btn').addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(location.href);
+        alert('Link disalin! Kamu bisa kirimkan ke pacarmu sekarang 💌');
+      }catch(e){
+        prompt('Salin link ini:', location.href);
+      }
+    });
+
+    // edit message (client-side)
+    document.getElementById('change-msg').addEventListener('click', ()=>{
+      const newMsg = prompt('Tulis pesan romantismu (ringkas):', document.getElementById('message').innerText);
+      if(newMsg !== null){
+        document.getElementById('message').innerText = newMsg;
+      }
+    });
+
+    // small personalization helper:
+    // Replace these with favorite name via simple prompt on first open
+    (function setPersonalization(){
+      const urlParams = new URLSearchParams(location.search);
+      const name = urlParams.get('to') || '';
+      if(name){
+        document.getElementById('title').innerText = 'Untukmu, ' + decodeURIComponent(name);
+        document.getElementById('from-line').innerText = 'Dari: ' + (urlParams.get('from')? decodeURIComponent(urlParams.get('from')) : 'Kamu');
+      }
+    })();
+  </script>
+</body>
+</html>
